@@ -1,20 +1,20 @@
 /*
 Copyright 2009 David Revell
 
-This file is part of SwiFTP.
+This file is part of PrivilegeFTP.
 
-SwiFTP is free software: you can redistribute it and/or modify
+PrivilegeFTP is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-SwiFTP is distributed in the hope that it will be useful,
+PrivilegeFTP is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
+along with PrivilegeFTP.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 package privilege.bluepremium.PrivilegeFTP;
@@ -43,7 +43,7 @@ abstract public class Util {
 	}
 	
 	/**
-	 * Get the SwiFTP version from the manifest.
+	 * Get the PrivilegeFTP version from the manifest.
 	 * @return The version as a String.
 	 */
 	public static String getVersion() {
@@ -51,7 +51,7 @@ abstract public class Util {
 		try {
 			return Globals.getContext().getPackageManager().getPackageInfo(packageName, 0).versionName;
 		} catch ( NameNotFoundException e) {
-			myLog.l(Log.ERROR, "NameNotFoundException looking up SwiFTP version");
+			myLog.l(Log.ERROR, "NameNotFoundException looking up PrivilegeFTP version");
 			return null;
 		}
 	}

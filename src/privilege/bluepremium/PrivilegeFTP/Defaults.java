@@ -1,20 +1,20 @@
 /*
 Copyright 2009 David Revell
 
-This file is part of SwiFTP.
+This file is part of PrivilegeFTP.
 
-SwiFTP is free software: you can redistribute it and/or modify
+PrivilegeFTP is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-SwiFTP is distributed in the hope that it will be useful,
+PrivilegeFTP is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
+along with PrivilegeFTP.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 package privilege.bluepremium.PrivilegeFTP;
@@ -29,7 +29,7 @@ public class Defaults {
 	protected static int serverLogScrollBack = 10;
 	protected static int uiLogLevel = Defaults.release ? Log.INFO : Log.DEBUG;
 	protected static int consoleLogLevel = Defaults.release ? Log.INFO : Log.DEBUG;
-	protected static String settingsName = "SwiFTP";
+	protected static String settingsName = "PrivilegeFTP";
 	//protected static String username = "user";
 	//protected static String password = "";
 	protected static int portNumber = 2121; 

@@ -1,5 +1,5 @@
 package privilege.bluepremium.PrivilegeFTP;
-//package org.swiftp;
+//package org.PrivilegeFTP;
 //
 //import java.io.FileOutputStream;
 //import java.io.IOException;

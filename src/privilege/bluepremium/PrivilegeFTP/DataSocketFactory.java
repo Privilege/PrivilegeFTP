@@ -16,14 +16,14 @@ abstract public class DataSocketFactory {
 	protected MyLog myLog = new MyLog(getClass().getName());
 	
 	/**
-	 * When SwiFTP receives a PORT command, this will be called. Subclasses should
+	 * When PrivilegeFTP receives a PORT command, this will be called. Subclasses should
 	 * perform whatever initialization is necessary.
 	 * @return Whether the necessary actions completed successfully
 	 */
 	abstract public boolean onPort(InetAddress dest, int port);
 	
 	/**
-	 * When SwiFTP receives a PASV command, this will be called. Subclasses should
+	 * When PrivilegeFTP receives a PASV command, this will be called. Subclasses should
 	 * perform whatever initialization is necessary.
 	 * @return Whether the necessary actions completed successfully
 	 */

@@ -152,6 +152,9 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070005;
+        /**  Any customizations for your app running on devices with Theme.Holo here 
+         */
+        public static final int HoloTheme=0x7f070006;
         public static final int TextAppearance=0x7f070001;
         public static final int TextAppearance_ActionButton=0x7f070002;
         public static final int Theme_NoTitle=0x7f070003;

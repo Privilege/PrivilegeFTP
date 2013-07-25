@@ -26,14 +26,14 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
      own application, the package name must be changed from "com.example.*"
      to come from a domain that you own or have control over. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="privilege.bluepremium.PrivilegeFTP" android:versionCode="1" android:versionName="1.0.0">
+    package="privilege.bluepremium.PrivilegeFTP" android:versionCode="4" android:versionName="1.0.3">
 
     <!-- This package contains an application...  The 'label' is the name
          to display to the user for the overall application, and provides
          a default label for all following components.  The syntax here is a
          reference to one of our string resources.-->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
-    <application android:label="@string/FTP_name" android:icon="@drawable/logo" android:theme="@style/AppTheme" android:allowBackup="true">
+    <application android:label="@string/FTP_name" android:icon="@drawable/logo" android:theme="@style/HoloTheme" android:allowBackup="true">
 
         <!-- An Activity in the application - this is something the user
              can launch and interact with.  The "name" attribute is the
@@ -63,7 +63,7 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
           <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
                 <!-- WidgetProvider will process this broadcast -->
-				<action android:name="org.swiftp.WidgetProvider.ACTION_WIDGET_BUTTON"/>
+				<action android:name="privilege.bluepremium.PrivilegeFTP.WidgetProvider.ACTION_WIDGET_BUTTON"/>
           </intent-filter>
           <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider" />
       </receiver>
@@ -73,7 +73,7 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
           <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
                 <!-- WidgetProvider will process this broadcast -->
-				<action android:name="org.swiftp.WidgetProvider.ACTION_WIDGET_BUTTON"/>
+				<action android:name="privilege.bluepremium.PrivilegeFTP.WidgetProvider.ACTION_WIDGET_BUTTON"/>
           </intent-filter>
           <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_provider" />
       </receiver>
@@ -82,7 +82,7 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
     
 <!--    <receiver-->
 <!--    	android:label="@string/wifi_state_receiver_label" -->
-<!--        android:name="org.swiftp.WifiStateReceiver" -->
+<!--        android:name="privilege.bluepremium.PrivilegeFTP.WifiStateReceiver" -->
 <!--        android:enabled="true"-->
 <!--        android:exported="true"-->
 <!--        >-->
@@ -96,7 +96,6 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
 <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
 <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
-
 <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
 
 <uses-sdk
