@@ -24,5 +24,5 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
     <color name="red">#f00</color>
 
     <!-- Retrieved via Resources.getDrawable() and friends. -->
-    <drawable name="semi_black">#80000000</drawable>
+    <drawable name="semi_black">#0EEADF</drawable>
 </resources>

@@ -29,13 +29,19 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
     android:layout_height="fill_parent"
     android:orientation="vertical"
    	>
-    
+    <TextView
+		    	android:layout_height="wrap_content"
+		    	android:layout_width="wrap_content"
+		    	android:text="@string/blank"
+		    	android:textSize="5sp"
+		    	android:textColor="#ffffff" 
+	    />    
     <TextView
     	android:layout_width="wrap_content"
     	android:layout_height="wrap_content"
     	android:text="@string/config_header"
-    	android:textSize="20sp"
-    	android:textColor="#ffffff"
+    	android:textSize="25sp"
+    	android:textColor="@android:color/holo_blue_light"
     	/>
     
     <TextView
@@ -51,34 +57,48 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
 	</FrameLayout>
 	
 	<!--  A horizontal line -->
-	<FrameLayout android:layout_height="1px"
+	<FrameLayout android:layout_height="3px"
 		android:layout_width="fill_parent"
-		android:background="#666666"
+		android:background="@android:color/holo_blue_light"
 		>
 	</FrameLayout>
-	
+    <TextView
+		    	android:layout_height="wrap_content"
+		    	android:layout_width="wrap_content"
+		    	android:text="@string/blank"
+		    	android:textSize="5sp"
+		    	android:textColor="#ffffff" 
+	    />	
 	<TextView
 		android:text="@string/user_password_intro"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		/>    
+    <TextView
+		    	android:layout_height="wrap_content"
+		    	android:layout_width="wrap_content"
+		    	android:text="@string/blank"
+		    	android:textSize="1sp"
+		    	android:textColor="#ffffff" 
+	    />
 	<TableLayout 
 		android:layout_width="fill_parent"
     	android:layout_height="wrap_content"
     	android:stretchColumns="*"
     	>
-    	<TableRow>
-    	
+    	<TableRow>	
 			<TextView
 		    	android:layout_width="wrap_content"
 		    	android:layout_height="wrap_content"
 		    	android:text="@string/config_username"
 		    	/> 
+
 		    <EditText
-		    	android:id="@+id/config_username"
-		    	android:layout_width="fill_parent"
-		    	android:layout_height="wrap_content"
-		    	/> 
+		        android:id="@+id/config_username"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textColorLink="#677B7A" />
+ 
 		</TableRow>
 		<TableRow>
 			<TextView
@@ -86,37 +106,54 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
 		    	android:layout_height="wrap_content"
 		    	android:text="@string/config_password"
 		    	/> 
+
 		    <EditText
-		    	android:id="@+id/config_password"
-		    	android:layout_width="fill_parent"
-		    	android:layout_height="wrap_content"
-		    	android:password="true"
-		    	/> 
+		        android:id="@+id/config_password"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:password="true"
+		        android:textColorLink="#677B7A" />
+ 
 		</TableRow>
 		
 	</TableLayout>
-	<!--  A horizontal line -->
-	<FrameLayout android:layout_height="1px"
+    <TextView
+		    	android:layout_height="wrap_content"
+		    	android:layout_width="wrap_content"
+		    	android:text="@string/blank"
+		    	android:textSize="5sp"
+		    	android:textColor="#ffffff" 
+	    />
+	<!--  A horizontal line -->	
+	<FrameLayout android:layout_height="3px"
 		android:layout_width="fill_parent"
-		android:background="#666666"
+		android:background="@android:color/holo_blue_light"
 		/>
-
 	<TableLayout 
 		android:layout_width="fill_parent"
     	android:layout_height="wrap_content"
     	android:stretchColumns="*"
     	>
+    <TextView
+		    	android:layout_height="wrap_content"
+		    	android:layout_width="wrap_content"
+		    	android:text="@string/blank"
+		    	android:textSize="3sp"
+		    	android:textColor="#ffffff" 
+	    />		
 		<TableRow>
 			<TextView
 		    	android:layout_width="wrap_content"
 		    	android:layout_height="wrap_content"
 		    	android:text="@string/config_portnum"
 		    	/> 
+
 		    <EditText
-		    	android:id="@+id/config_portnum"
-		    	android:layout_width="fill_parent"
-		    	android:layout_height="wrap_content"
-		    	/> 
+		        android:id="@+id/config_portnum"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textColorLink="#677B7A" />
+ 
 		</TableRow>
 		<TableRow>
 			<TextView
@@ -124,16 +161,25 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
 		    	android:layout_height="wrap_content"
 		    	android:text="@string/stay_within_folder"
 		    	/>
+
 		    <EditText
-		    	android:id="@+id/config_chroot"
-		    	android:layout_width="fill_parent"
-		    	android:layout_height="wrap_content"
-		    	/>
+		        android:id="@+id/config_chroot"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textColorLink="#677B7A" />
+
 		    </TableRow>
 	</TableLayout>
-	<FrameLayout android:layout_height="1px"
+	    <TextView
+		    	android:layout_height="wrap_content"
+		    	android:layout_width="wrap_content"
+		    	android:text="@string/blank"
+		    	android:textSize="5sp"
+		    	android:textColor="#ffffff" 
+	    />
+	<FrameLayout android:layout_height="3px"
 		android:layout_width="fill_parent"
-		android:background="#666666"
+		android:background="@android:color/holo_blue_light"
 		/>
 
 	<TableLayout 
@@ -141,31 +187,27 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
     	android:layout_height="wrap_content"
     	android:stretchColumns="*"
     	>
+	    <TextView
+		    	android:layout_height="wrap_content"
+		    	android:layout_width="wrap_content"
+		    	android:text="@string/blank"
+		    	android:textSize="3sp"
+		    	android:textColor="#ffffff" 
+	    />
 		<TableRow>
 			<TextView
 			   	android:layout_width="wrap_content"
 		    	android:layout_height="wrap_content"
 		    	android:text="@string/accept_connections_from_wifi"
 		    	/>
-			<CheckBox 
-				android:id="@+id/config_wifi_checkbox"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-		    	android:checked="true"
-				/>
-		</TableRow>
-		<TableRow>
-			<TextView
-			   	android:layout_width="wrap_content"
-		    	android:layout_height="wrap_content"
-		    	android:text="@string/accept_connections_from_net"
-		    	/>
-			<CheckBox  
-				android:id="@+id/config_net_checkbox"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-		    	android:checked="false"
-				/>
+
+			<CheckBox
+			    android:id="@+id/config_wifi_checkbox"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:checked="true"
+			    android:textColorLink="#677B7A" />
+
 		</TableRow>
 		<TableRow>
             <TextView
@@ -173,20 +215,34 @@ along with SwiFTP.  If not, see <http://www.gnu.org/licenses/>.
                 android:layout_height="wrap_content"
                 android:text="@string/stay_awake"
                 />
-            <CheckBox  
+
+            <CheckBox
                 android:id="@+id/config_awake_checkbox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                />
+                android:textColorLink="#677B7A" />
+
         </TableRow>
 	</TableLayout>
-
-	<FrameLayout android:layout_height="1px"
+    <TextView
+		    	android:layout_height="wrap_content"
+		    	android:layout_width="wrap_content"
+		    	android:text="@string/blank"
+		    	android:textSize="5sp"
+		    	android:textColor="#ffffff" 
+	    />
+	<FrameLayout android:layout_height="3px"
 		android:layout_width="fill_parent"
-		android:background="#666666"
+		android:background="@android:color/holo_blue_light"
 		/>
-
+    <TextView
+		    	android:layout_height="wrap_content"
+		    	android:layout_width="wrap_content"
+		    	android:text="@string/blank"
+		    	android:textSize="5sp"
+		    	android:textColor="#ffffff" 
+	    />
 	<LinearLayout 
 		android:layout_width="fill_parent"
 	    android:layout_height="fill_parent"
